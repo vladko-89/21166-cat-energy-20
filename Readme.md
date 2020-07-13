@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владислав Уханов](https://up.htmlacademy.ru/adaptive/20/user/21166).
-* Наставник: Алина Шаймиева.
+* Наставник:[Алина Шаймиева](https://up.htmlacademy.ru/adaptive/20/user/74223).
 
 ---
 
