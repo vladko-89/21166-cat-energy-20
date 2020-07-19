@@ -31,6 +31,82 @@
     </header>
     <main class="main-form">
       <h1 class="main-title">Подобор программы</h1>
+      <h2 class="form-title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+      <form action="http://echo.htmlacademy.ru" class="order-form" method="post">
+        <fieldset class="order-form__part-pet pet-id">
+          <legend class="order-form__title visually-hidden">Ваш питомец:</legend>
+          <ul class="pet-id__id-list">
+            <li class="pet-id__id-item">
+              <label for="name" class="order-form__requisite">Имя: <sup>*</sup></label>
+              <input type="text" id="name" name="nickname" class="order-form__value" placeholder="Барсик">
+            </li>
+            <li class="pet-id__id-item">
+              <label for="weight" class="order-form__requisite">Вес(кг): <sup>*</sup></label>
+              <input type="text" id="weight" name="weight" class="order-form__value" placeholder="7">
+            </li>
+            <li class="pet-id__id-item">
+              <label for="age" class="order-form__requisite">Возраст(Лет):</label>
+              <input type="text" id="age" name="age" class="order-form__value" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__part-program program">
+          <legend class="order-form__title visuallu-hidden">Программа:</legend>
+          <ul class="program__list">
+            <li class="program__item">
+              <input type="radio" name="program-option" id="loosing-weight" value="loosing-weight" class="order-form__radio" checked>
+              <label for="loosing-weight" class="order-form__requisite order-form__requisite--pale">Похудение</label>
+            </li>
+            <li class="program__item">
+              <input type="radio" name="program-option" id="weight-set" value="weight-set" class="order-form__radio">
+              <label for="weight-set" class="order-form__requisite order-form__requisite--pale">Набор массы</label>
+            </li>
+            <li class="program__item">
+              <input type="radio" name="program-option" id="don't-know" value="don't-know" class="order-form__radio">
+              <label for="don't-know" class="order-form__requisite order-form__requisite--pale">Не знаю (Нужен ваш совет)</label>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__part-contacts contacts">
+          <legend class="order-form__title">Контактные данные (владельца кота)</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label for="email" class="order-form__requisite">E-mail: <sup>*</sup></label>
+              <input type="email" id="email" name="email" class="order-form__value" placeholder="kuklachev@gmail.com">
+            </li>
+            <li class="contacts__item">
+              <label for="phone" class="order-form__requisite">Телефон: <sup>*</sup></label>
+              <input type="tel" id="phone" name="phone" class="order-form__value" placeholder="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__comment">
+          <legend class="order-form__title">Комментарий</legend>
+          <textarea name="comment" id="comment" cols="0" rows="0" placeholder="Расскажите обо всех поводках кота"></textarea>
+        </fieldset>
+        <fieldset class="order-form__additionaly additionaly">
+          <legend class="order-form-title">Дополнительно</legend>
+          <ul class="additionaly__list">
+            <li class="additionaly__item">
+              <input type="checkbox" name="sugar-sub" id="sugar-substitute" value="sugar-substitute" class="order-form__checkbox" checked>
+              <label for="sugar-substitute" class="order-form__requisite order-form__requisite--dark">Сахарозаменитель</label>
+            </li>
+            <li class="additionaly__item">
+              <input type="checkbox" name="water" id="water" value="water" class="order-form__checkbox">
+              <label for="water" class="order-form__requisite order-form__requisite--dark">Питьевая вода</label>
+            </li>
+            <li class="additionaly__item">
+              <input type="checkbox" name="milk" id="milk" value="milk" class="order-form__checkbox">
+              <label for="milk" class="order-form__requisite order-form__requisite--dark">Молоко</label>
+            </li>
+            <li class="additionaly__item">
+              <input type="checkbox" name="vitamins" id="vitamins" value="vitamins" class="order-form__checkbox">
+              <label for="vitamins" class="order-form__requisite order-form__requisite--dark">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form-order__button button" type="submit">Отправить заявку</button>
+      </form>
+      <p><sup>*</sup> &mdash; Обязательные поля</p>
     </main>
     <footer class="page-footer">
       <a href="" class="page-footer__logo-text logo-text">
@@ -38,15 +114,15 @@
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link social-link--vkontakte">Вконтакте
+          <a href="#" class="page-footer__social-link page-footer__social-link--vkontakte">Вконтакте
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link social-link--instagram">Инстаграмм
+          <a href="#" class="page-footer__social-link page-footer__social-link--instagram">Инстаграмм
           </a>
         </li>
         <li class="page-footer__social-item">
-          <a href="#" class="page-footer__social-link social-link--facebook">Фэйсбук
+          <a href="#" class="page-footer__social-link page-footer__social-link--facebook">Фэйсбук
           </a>
         </li>
       </ul>
