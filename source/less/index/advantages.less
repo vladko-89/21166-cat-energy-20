@@ -1,0 +1,28 @@
+.advantages__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding-left: 80px;
+}
+
+.advantages__item {
+  position: relative;
+  padding-bottom: 24px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  &::before {
+    content:'';
+    position:absolute;
+    left: -80px;
+    top: -5px;
+    width: 60px;
+    height: 60px;
+    background-color: @basic-green;
+  };
+}
+
