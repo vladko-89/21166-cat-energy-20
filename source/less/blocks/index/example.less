@@ -13,6 +13,10 @@
 .example__text {
   margin: 0;
   padding-bottom: 25px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .example__list {
@@ -26,4 +30,19 @@
   padding: 0;
   padding-top: 42px;
   padding-bottom: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @basic-white;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__slider {
+    background-color: @basic-darker-grey;
+  }
 }

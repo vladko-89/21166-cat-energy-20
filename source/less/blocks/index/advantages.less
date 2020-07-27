@@ -13,15 +13,51 @@
   position: relative;
   padding-bottom: 24px;
   list-style: none;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+
   &::before {
-    content:'';
-    position:absolute;
+    content: "";
+    position: absolute;
     left: -80px;
     top: -5px;
     width: 60px;
     height: 60px;
     background-color: @basic-green;
-  };
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__title {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .advantages__item {
+    width: 250px;
+    padding: 0;
+    padding-bottom: 57px;
+    padding-top: 151px;
+    margin-bottom: 37px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      left: 0;
+      top: 41px;
+      width: 80px;
+      height: 80px;
+    }
+  }
 }

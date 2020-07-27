@@ -1,14 +1,17 @@
 .promo-block {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  font-family: "Oswald";
+  flex-direction: column;
+  font-family: "Oswald", "Arial", sans-serif;
   color: @basic-white;
 }
 
 .promo-block__background {
   position: relative;
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  align-self: center;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @special-green;
   width: 320px;
   height: 305px;
 }
@@ -39,4 +42,43 @@
 
 .promo-block__button {
   margin-top: 130px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-block {
+    display: block;
+  }
+
+  .promo-block__background {
+    background: @basic-white;
+    width: 414px;
+    height: auto;
+    margin-left: 117px;
+  }
+
+  .promo-block__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic-black;
+  }
+
+  .promo-block__text {
+    font-size: 14px;
+    line-height: 14px;
+    color: @basic-black;
+    text-align: start;
+  }
+
+  .promo-block__button {
+    position: relative;
+    margin-left: 117px;
+    padding: 14px 26px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-block {
+    height: 528px;
+  }
 }
