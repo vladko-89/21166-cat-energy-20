@@ -1,3 +1,22 @@
+.page-header {
+  position: relative;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .page-header__logo-image {
+    margin: 0 auto;
+    padding-right: 100px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
@@ -13,7 +32,6 @@
   .page-header {
     padding: 0;
     padding-left: 110px;
-
     min-height: 165px;
   }
 }

@@ -8,14 +8,14 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a href="#" class="page-header__logo-image">
+      <a class="page-header__logo-image">
         <img src="img/logo-mobile.svg" width="191" height="37" alt="Логотип сайта картинкой">
       </a>
-      <nav class="page-header__main-nav main-nav">
+      <nav class="page-header__main-nav main-nav--closed main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list site-list site-list--color-white">
           <li class="site-list__item">
             <a class="site-list__link">Главная</a>
           </li>
@@ -31,10 +31,12 @@
     <main class="main-index">
       <h1 class="visually-hidden">Сайт здорового питания для кошек Cat energy. Ваш кот будет вам благодарен</h1>
       <section class="promo-block">
-        <div class="promo-block__background">
-          <h2 class="promo-block__title">Функциональное питание для котов</h2>
-          <p class="promo-block__text">Занялся собой? Займись котом!</p>
-          <img class="promo-block__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Образец блюда">
+        <div class="promo-block__background-color">
+          <div class="promo-block__background">
+            <h2 class="promo-block__title">Функциональное питание для котов</h2>
+            <p class="promo-block__text">Занялся собой? Займись котом!</p>
+            <img class="promo-block__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Образец блюда">
+          </div>
         </div>
         <a class="promo-block__button button" href="#">Подобрать программу</a>
       </section>
@@ -55,7 +57,7 @@
           </ul>
         </section>
         <section class="advantages">
-          <h3 class="advantages__title">Как это работает</h3>
+          <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item">Функциональное питание содержит только полезные питательные вещества.
             </li>
@@ -72,26 +74,28 @@
         </section>
       </div>
       <section class="example">
-        <div class="wrapper">
           <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="example__list">
-            <div class="example__item example__item--flex">
-              <dt class="example__description example__description--small">Снижение веса</dt>
-              <dd class="example__value example__value--big">5 кг</dd>
-            </div>
-            <div class="example__item example__item--flex">
-              <dt  class="example__description example__description--small">Затрачено времени</dt>
-              <dd class="example__value example__value--big">60 дней</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__description">Затраты на питание:</dt>
-              <dd class="example__value">15000 руб.</dd>
-            </div>
-          </dl>
-          <div class="example__slider">
+          <div class="example__wrapper">
+            <div class="wrapper">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <dl class="example__list">
+              <div class="example__item example__item--flex">
+                <dt class="example__description example__description--small">Снижение веса</dt>
+                <dd class="example__value example__value--big">5 кг</dd>
+              </div>
+              <div class="example__item example__item--flex">
+                <dt  class="example__description example__description--small">Затрачено времени</dt>
+                <dd class="example__value example__value--big">60 дней</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__description">Затраты на питание:</dt>
+                <dd class="example__value">15000 руб.</dd>
+              </div>
+            </dl>
+          </div>
+            <div class="example__slider">
             <ul class="example__slider-list">
-              <li class="example__slider-item">
+              <li class="example__slider-item example__slider-item--current">
                 <img src="img/before-mobile@1x.png" alt="Изображение толстого кота" width="311" height="232" class="example__image example__image--before">
               </li>
               <li class="example__slider-item">
@@ -106,9 +110,9 @@
       </section>
       <section class="our-contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="our-contacts__wrapper wrapper flex-wrapper">
-          <h3 class="our-contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="our-contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="our-contacts__wrapper">
+          <h2 class="our-contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+          <p class="our-contacts__text">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
         <a href="#" class="our-contacts__map" aria-label="Ссылка Наш офис на карте">
           <img class="our-contacts__image-map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">

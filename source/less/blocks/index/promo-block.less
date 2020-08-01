@@ -6,6 +6,12 @@
   color: @basic-white;
 }
 
+.promo-block__background-color {
+  display: flex;
+  justify-content: center;
+  background-color: @special-green;
+}
+
 .promo-block__background {
   position: relative;
   align-self: center;
@@ -49,6 +55,11 @@
     display: block;
   }
 
+  .promo-block__background-color {
+    display: block;
+    background-color: inherit;
+  }
+
   .promo-block__background {
     background: @basic-white;
     width: 414px;
@@ -79,6 +90,27 @@
 
 @media (min-width: @desktop-width) {
   .promo-block {
+    position: relative;
     height: 528px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -165px;
+      z-index: -1;
+      width: 55.3%;
+      height: 696px;
+    }
+
+    &::before {
+      background-color: @special-green;
+    }
+
+    &::after {
+      background-image: url("../../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }
